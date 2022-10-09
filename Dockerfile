@@ -1,9 +1,8 @@
-FROM python:3.10-slim
+FROM python:3.10
 
-WORKDIR /app
-
+WORKDIR /code
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 COPY . .
 
-CMD gunicorn -b 0.0.0.0:80 -w 4 run:app
+ENTRYPOINT [ "sh", "entrypoint.sh" ]
