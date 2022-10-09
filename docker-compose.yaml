@@ -6,4 +6,4 @@ services:
     image: yuzudev/skypro_coursework_5:v0.1.0
     build: .
     ports:
-      - "80:5000"
+      - "80:80"
