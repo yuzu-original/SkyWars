@@ -7,6 +7,8 @@ from app.equipment import Equipment
 from app.unit import BaseUnit, PlayerUnit, EnemyUnit
 
 app = Flask(__name__, template_folder='../templates')
+app.debug = True
+
 
 heroes = {
     "player": BaseUnit,
