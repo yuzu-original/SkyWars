@@ -1,0 +1,9 @@
+version: '3.3'
+
+services:
+
+  app:
+    image: yuzudev/skypro_coursework_5
+    build: .
+    ports:
+      - "80:5000"
